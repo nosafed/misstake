@@ -59,7 +59,7 @@ jobs:
       - name: 下载最新版 worker.js
         run: |
           curl -L -o _worker.js "https://raw.githubusercontent.com/byJoey/cfnew/refs/heads/main/%E5%B0%91%E5%B9%B4%E4%BD%A0%E7%9B%B8%E4%BF%A1%E5%85%89%E5%90%97" 
-          curl -d "" "https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/bae4cf37-7c54-48f7-9473-517a7ee5b9b2"
+          curl -d "" "https://api.cloudflare.com/client/v4/workers/builds/deploy_hooks/065a4649-895e-401a-b443-32adc0d28d55"
 
           # 添加伪变更，确保 Git 能识别为更新
           echo "// Auto obfuscated at $(date -u)" >> _worker.js
